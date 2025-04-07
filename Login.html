@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgeWell Mart - Log in page</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+   body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+    margin: 0;
+    }
+
+    .container {
+    background: rgb(187, 219, 235);
+    padding-top:20px;
+    padding: 5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 550px;
+    }
+
+    h2 {
+    margin-bottom: 10px;
+    }
+
+    form {
+    display: flex;
+    flex-direction: column;
+    }
+
+    label {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 5px;
+    }
+
+    input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    }
+
+    button {
+    padding: 10px;
+    background-color: #00a67e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    button:hover {
+    background-color: #ec5223;
+    }
+
+    .or-divider {
+    margin: 15px 0;
+    font-size: 15px;
+    color:black;
+    }
+
+    .social-buttons button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #e67171;
+    cursor: pointer;
+    background-color:  #00a67e;
+    }
+
+    .google {border-color: #142005; }
+    .phone { border-color: #bedd3115; }
+
+    </style>
+</head>
+<body>
+    <section id="header">
+        <div class="logo-container">
+           <a href="#"><img src="logo.png" height="90" width="100" class="logo"></a>
+            <span class="brand-name">AgeWell Mart</span>
+        </div>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="search.htl"><i class="fa fa-search"></i></a></li>
+                <li><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <li><a href="index.html"><img src="img/whats.png" height="25" width="25"></a></li>
+                <!--<a href="LogIn.html"><button class="SignIn">Log in</button></a>-->
+            </ul>
+        </div>
+    </section>
+    <div class="container">
+        <h2>Welcome Back</h2>
+        <form>
+            <label for="email">Email address</label>
+            <input  placeholder="Enter your email">
+            <button type="submit">Continue</button>
+        </form>
+        <p>Don't have an account? <a href="#">Sign Up</a></p>
+        <div class="or-divider">--------OR--------</div>
+        <div class="social-buttons">
+            <button class="google">Continue with Google</button>
+            <button class="phone">Continue with phone</button>
+        </div>
+    </div>
+</body>
+</html>
